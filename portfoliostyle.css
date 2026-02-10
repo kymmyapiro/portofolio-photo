@@ -1,0 +1,104 @@
+body {
+    font-family: "Libre Baskerville", serif;
+}
+
+
+.title {
+    color: black;
+}
+
+.title a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.home .title {
+    color: white;
+    
+}
+
+.home .navigation a {
+    color:greenyellow;
+}
+
+.navigation ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navigation li {
+  list-style: none;
+}
+
+a {
+    color:rgb(119, 180, 27);
+}
+
+.scroll-gallery {
+    scroll-behavior: smooth;
+    overflow-x: auto;
+    overflow-y: hidden;
+    white-space: nowrap;
+    height: 100vh;
+    box-sizing:border-box;
+}
+
+.scroll-gallery img {
+    height: 100%;
+    width: auto;
+    display: inline-block; /* Keep them inline so they scroll horizontally */
+    object-fit: cover;
+    margin-right: 10px;
+}
+
+.top-bar {
+  position: relative;
+  z-index: 10;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 30px;
+  font-family: "Inter", sans-serif;
+  text-transform: uppercase;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  background: transparent;
+}
+
+
+.navigation a {
+    margin-left: 20px;
+    text-decoration: none;
+}
+
+.scroll-gallery iframe {
+  height: 100%;
+  aspect-ratio: 16 / 9;
+  width: auto;
+  max-width: 100vw;
+  margin-right: 20px;
+  flex-shrink: 0;
+  border: none;
+}
+
+.home .showreel-background {
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  overflow: hidden;
+}
+
+.home .showreel-background video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
+.home .showreel-background::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.35);
+}
