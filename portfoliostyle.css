@@ -2,7 +2,6 @@ body {
     font-family: "Libre Baskerville", serif;
 }
 
-
 .title {
     color: black;
 }
@@ -95,10 +94,49 @@ a {
   object-fit: cover;
 }
 
-
 .home .showreel-background::after {
   content: "";
   position: absolute;
   inset: 0;
   background: rgba(0, 0, 0, 0.35);
+}
+
+.bio-container {
+  display: flex;
+  align-items: flex-start;
+  align-items: center;  
+  gap: 40px;
+  padding: 5%;
+}
+
+.bio {
+  line-height: 2;
+  max-width: 600px;
+  text-align: right;
+}
+
+.icon {
+  height: auto;
+  width: 500px;
+}
+
+.availability {
+  line-height: 2;
+  max-width: 600px;
+  text-align: right;
+  color: rgb(4, 150, 72);
+}
+
+.contact {
+  line-height: 2;
+  max-width: 600px;
+  letter-spacing: 2px;
+  text-align: center;
+}
+
+.site-footer {
+  text-align: center;
+  font-size: 0.8rem;
+  letter-spacing: 0.1em;
+  color: #777;
 }
