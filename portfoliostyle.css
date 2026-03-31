@@ -103,8 +103,7 @@ a {
 
 .bio-container {
   display: flex;
-  align-items: flex-start;
-  align-items: center;  
+  align-items: flex-start;  
   gap: 40px;
   padding: 5%;
 }
