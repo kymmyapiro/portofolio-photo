@@ -1,6 +1,13 @@
 body {
     font-family: "Libre Baskerville", serif;
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden; /* prevents tiny scroll */
 }
+
+/* -------------------- TYPOGRAPHY -------------------- */
 
 .title {
     color: black;
@@ -13,12 +20,17 @@ body {
 
 .home .title {
     color: white;
-    
 }
 
 .home .navigation a {
-    color:greenyellow;
+    color: greenyellow;
 }
+
+a {
+    color: rgb(119, 180, 27);
+}
+
+/* -------------------- NAVIGATION -------------------- */
 
 .navigation ul {
   list-style: none;
@@ -30,25 +42,9 @@ body {
   list-style: none;
 }
 
-a {
-    color:rgb(119, 180, 27);
-}
-
-.scroll-gallery {
-    scroll-behavior: smooth;
-    overflow-x: auto;
-    overflow-y: hidden;
-    white-space: nowrap;
-    height: 100vh;
-    box-sizing:border-box;
-}
-
-.scroll-gallery img {
-    height: 100%;
-    width: auto;
-    display: inline-block; /* Keep them inline so they scroll horizontally */
-    object-fit: cover;
-    margin-right: 10px;
+.navigation a {
+    margin-left: 20px;
+    text-decoration: none;
 }
 
 .top-bar {
@@ -63,12 +59,27 @@ a {
   font-weight: 500;
   letter-spacing: 0.1em;
   background: transparent;
+  flex-shrink: 0; /* prevents shrinking */
 }
 
+/* -------------------- SCROLL GALLERY -------------------- */
 
-.navigation a {
-    margin-left: 20px;
-    text-decoration: none;
+.scroll-gallery {
+    flex: 1; /* fills remaining screen height */
+    height: auto;
+    scroll-behavior: smooth;
+    overflow-x: auto;
+    overflow-y: hidden;
+    white-space: nowrap;
+    box-sizing: border-box;
+}
+
+.scroll-gallery img {
+    height: 100%;
+    width: auto;
+    display: inline-block;
+    object-fit: cover;
+    margin-right: 10px;
 }
 
 .scroll-gallery iframe {
@@ -80,6 +91,8 @@ a {
   flex-shrink: 0;
   border: none;
 }
+
+/* -------------------- VIDEO BACKGROUND -------------------- */
 
 .home .showreel-background {
   position: fixed;
@@ -101,6 +114,8 @@ a {
   background: rgba(0, 0, 0, 0.35);
 }
 
+/* -------------------- BIO SECTION -------------------- */
+
 .bio-container {
   display: flex;
   align-items: center;
@@ -116,8 +131,9 @@ a {
 }
 
 .icon {
+  width: 100%;
+  max-width: 500px;
   height: auto;
-  width: 500px;
 }
 
 .availability {
@@ -134,9 +150,62 @@ a {
   text-align: center;
 }
 
+/* -------------------- FOOTER -------------------- */
+
 .site-footer {
   text-align: center;
   font-size: 0.8rem;
   letter-spacing: 0.1em;
   color: #777;
+}
+
+/* ========================================================= */
+/* ===================== RESPONSIVE ========================= */
+/* ========================================================= */
+
+@media (max-width: 768px) {
+
+  /* allow scrolling again on mobile */
+  body {
+    height: auto;
+    overflow: auto;
+  }
+
+  /* NAVIGATION */
+  .top-bar {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    padding: 15px 20px;
+  }
+
+  .navigation a {
+    margin-left: 0;
+    margin-right: 15px;
+  }
+
+  /* BIO SECTION */
+  .bio-container {
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+    padding: 20px;
+  }
+
+  .bio,
+  .availability {
+    text-align: center;
+    max-width: 100%;
+  }
+
+  /* GALLERY */
+  .scroll-gallery {
+    height: auto;
+  }
+
+  .scroll-gallery img,
+  .scroll-gallery iframe {
+    height: auto;
+    width: 90vw;
+  }
 }
