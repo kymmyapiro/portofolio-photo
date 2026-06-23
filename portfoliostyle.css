@@ -1,10 +1,29 @@
 body {
-    font-family: "Libre Baskerville", serif;
-    margin: 0;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    overflow: hidden; /* prevents tiny scroll */
+  font-family: "Libre Baskerville", serif;
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+/*------------------- PROJECT PAGE ----------------------*/
+
+.heroimage {
+  display: flex;
+  gap: 20px;
+
+}
+
+.heroimage img {
+  flex: 1;
+  width: 0;
+  height: auto;
+}
+
+.projtext {
+  text-align: center;
+  padding: 2%;
 }
 
 /* -------------------- TYPOGRAPHY -------------------- */
@@ -30,6 +49,10 @@ a {
     color: rgb(119, 180, 27);
 }
 
+.space {
+  text-align: center;
+  letter-spacing: 5px;
+}
 /* -------------------- NAVIGATION -------------------- */
 
 .navigation ul {

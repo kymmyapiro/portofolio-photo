@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>The Space In Between</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/portfoliostyle.css">
+</head>
+
+<body>
+
+  <header>
+    <div class="top-bar">
+      <div class="title">
+        <a href="/">Kymberley Apiro</a>
+      </div>
+      <div class="navigation">
+        <ul>
+          <li>
+            <a href="/about/">About</a>
+            <a href="/news/">News</a>
+            <a href="/ent/">Entertainment</a>
+            <a href="/video/">Video</a>
+            <a href="/tearsheets/">Tearsheets</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </header>
+
+  <h1 class="space">The Space In Between</h1>
+
+  <div class="projtext">
+    <p>The Space Inbetween is an ongoing photographic exploration of identity, belonging, and place. Drawing from my experience as a Black British woman of Ugandan heritage, the work moves between the urban landscape of Brixton and the pastoral surroundings of the British countryside, exploring what it means to exist between cultures, histories, and environments. 
+        Through self-portraiture, landscape, archival material, and documentary photography, the project reflects on hybridity, memory, and the quiet tension of never belonging entirely to one place or another.</p>
+  </div>
+
+<div class="heroimage">
+    <img src="/IMAGES/PROJECTS/B-W-PORTRAIT01.jpg">
+    <img src="/IMAGES/PROJECTS/B-W-PORTRAIT.jpg">
+    <img src="/IMAGES/PROJECTS/B-W-PORTRAIT02.jpg">
+</div>
+ <footer class="site-footer">
+      <p>© 2026 by Kymberley Apiro</p>
+    </footer>
+
+</body>
+</html>
